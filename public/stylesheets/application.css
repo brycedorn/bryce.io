@@ -6412,8 +6412,6 @@ body #mobile a i {
 body #mobile .panel {
   margin: 0;
   border-radius: 0;
-  min-height: 250px;
-  max-height: 500px;
 }
 body #mobile #message {
   background: #0c0f66;

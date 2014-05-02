@@ -21,5 +21,8 @@ $(document).ready(function() {
     $('canvas').hide();
     $('#moon').hide();
     $('#mobile').unhide();
+    $('#message').css('height',$(window).height()/3);
+    $('#mail').css('height',$(window).height()/3);
+    $('#phone').css('height',$(window).height()/3);
   }
 });
