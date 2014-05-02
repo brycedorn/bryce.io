@@ -41,13 +41,15 @@ body {
       color: #EEEAF2;
       text-align: center;
       i {
-        padding-top: 80px;
+        padding-top: 100px;
       }
     }
 
     .panel {
       margin: 0;
       border-radius: 0;
+      min-height: 300px;
+      max-height: 550px;
     }
 
     #message {
