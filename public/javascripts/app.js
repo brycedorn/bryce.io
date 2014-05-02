@@ -21,5 +21,7 @@ $(document).ready(function() {
     $('canvas').hide();
     $('#moon').hide();
     $('#mobile').unhide();
+  } else { // Desktop
+    $('#mobile').hide();
   }
 });

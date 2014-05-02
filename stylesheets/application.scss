@@ -36,19 +36,20 @@ body {
   #mobile {
     overflow: hidden;
     display: hidden;
+    background: #04a3ad;
     
     a {
       color: #EEEAF2;
       text-align: center;
       i {
-        padding-top: 100px;
+        padding-top: 150px;
       }
     }
 
     .panel {
       margin: 0;
-      border-radius: 0;
-      min-height: 300px;
+      border-radius: 0px;
+      min-height: 400px;
       max-height: 550px;
     }
 
