@@ -6407,11 +6407,13 @@ body #mobile a {
   text-align: center;
 }
 body #mobile a i {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 body #mobile .panel {
   margin: 0;
   border-radius: 0;
+  min-height: 300px;
+  max-height: 550px;
 }
 body #mobile #message {
   background: #0c0f66;
