@@ -1,9 +1,6 @@
-# Sherlock Doge
+# [bryce.io](http://www.bryce.io)
 
-#### A simple aggregate Dogecoin pool monitor and tracker
-
-[![Build Status](https://travis-ci.org/brycedorn/sherlock-doge.svg?branch=master)](https://travis-ci.org/brycedorn/sherlock-doge)
-[![Analytics](https://ga-beacon.appspot.com/UA-40008117-10/sherlock-doge/home)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-40008117-10/bryce.io/home)](https://github.com/igrigorik/ga-beacon)
 
 
 ## Installation
