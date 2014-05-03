@@ -6393,7 +6393,85 @@ body #moon:hover {
   top: -280px;
 }
 body #moon.open {
-  top: 0px;
+  top: 5%;
+  left: 2.5%;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.6);
+}
+body #moon.open.sunny {
+  background: rgba(255, 255, 255, 0.4) !important;
+}
+body #portfolio {
+  font-family: Helvetica;
+  padding: 48px 10px 24px 10px;
+  z-index: 100;
+  display: none;
+  overflow: scroll;
+}
+body #portfolio h1 {
+  font-weight: lighter;
+  text-align: center;
+}
+body #portfolio h3, body #portfolio p {
+  color: #000;
+  padding: 0;
+  margin: 2px;
+  text-align: left;
+}
+body #portfolio #works {
+  overflow: scroll;
+  margin-top: 40px;
+}
+body #portfolio #works .entry {
+  text-align: center;
+  padding: 30px 60px;
+}
+body #portfolio #works a#clickthrough {
+  height: 200px;
+  overflow: hidden;
+  display: block;
+}
+body #portfolio #works a#clickthrough img {
+  vertical-align: middle;
+  opacity: 0.8;
+  width: 100%;
+}
+body #portfolio #works a#clickthrough img:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+body #portfolio .top {
+  position: absolute;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  right: 0px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  top: 0;
+}
+body #portfolio .bottom {
+  position: absolute;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  right: 0px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+}
+body #portfolio .bottom i {
+  padding: 10px;
+  color: #fff;
+}
+body i#close {
+  color: #fff;
+  z-index: 10;
+  position: absolute !important;
+  right: 44px;
+  opacity: 0;
+  top: 44px;
+  display: block;
+  cursor: pointer;
 }
 body #canvas {
   z-index: 100;
