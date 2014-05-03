@@ -25,8 +25,102 @@ body {
     }
 
     &.open {
-      top: 0px;
+      top: 5%;
+      left: 2.5%;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.6);
+
+      &.sunny {
+        background: rgba(255,255,255,0.4) !important;
+      }
     }
+  }
+
+  #portfolio {
+    font-family: Helvetica;
+    padding: 48px 10px 24px 10px;
+    z-index: 100;
+    display: none;
+    overflow: scroll;
+
+    h1 {
+      font-weight: lighter;
+      text-align: center;
+    }
+
+    h3,p {
+      color: #000;
+      padding: 0;
+      margin: 2px;
+      text-align: left;
+    }
+
+    #works {
+      // display: none;
+      overflow: scroll;
+      margin-top: 40px;
+
+      .entry {
+        text-align: center;
+        padding: 30px 60px;
+      }
+
+      a#clickthrough {
+        height: 200px;
+        overflow: hidden;
+        display: block;
+        
+        img {
+          // -webkit-filter: saturate(0%);
+          vertical-align: middle;
+          opacity: 0.8;
+          width: 100%;
+
+          &:hover {
+            // -webkit-filter: saturate(100%);
+            text-decoration: none;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .top {
+      position: absolute;
+      width: 100%;
+      border-radius: 20px 20px 0 0;
+      right: 0px;
+      text-align: center;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      top: 0;
+    }
+
+    .bottom {
+      position: absolute;
+      width: 100%;
+      border-radius: 0 0 20px 20px;
+      right: 0px;
+      text-align: center;
+      background: rgba(0,0,0,0.6);
+      bottom: 0;
+
+      i {
+        padding: 10px;
+        color: #fff;
+      }
+    }
+  }
+
+  i#close {
+    color: #fff;
+    z-index: 10;
+    position: absolute !important;
+    right: 44px;
+    opacity: 0;
+    top: 44px;
+    display: block;
+    cursor: pointer;
   }
 
   #canvas {
