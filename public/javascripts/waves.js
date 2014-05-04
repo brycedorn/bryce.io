@@ -2,15 +2,9 @@
 var max_width = $(window).width();
 var max_height = $(window).height();
 
-// Night/day
-var d = new Date();
-var n = d.getHours();
-var night = (n>7 && n <19) ? false : true;
-
 // Stars
 var moveStars = new function() {
-  if(night) var star_count = 200;
-  else var star_count = 0;
+  var star_count = 200;
 
   // Create a symbol, which we will use to place instances of later:
   var star = new Path.Circle({

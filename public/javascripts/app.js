@@ -43,12 +43,4 @@ $(document).ready(function() {
   } else { // Desktop
     $('#mobile').hide();
   }
-
-  // Daytime
-  var n = new Date().getHours();
-  if(n>7 && n <19) {
-    $('#moon').css('background','#FFE545');
-    $('#moon').addClass('sunny');
-    $('body').css('background','#6cc3fc');
-  }
 });
