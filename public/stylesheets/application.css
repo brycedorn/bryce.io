@@ -6377,6 +6377,7 @@ body {
 }
 body #moon {
   position: absolute;
+  box-shadow: 0 0 80px #fff;
   top: -300px;
   left: 35%;
   z-index: 10;
@@ -6397,6 +6398,7 @@ body #moon.open {
   left: 2.5%;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.6);
+  box-shadow: none;
 }
 body #moon.open.sunny {
   background: rgba(255, 255, 255, 0.4) !important;

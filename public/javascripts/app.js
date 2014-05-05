@@ -10,11 +10,24 @@ $(document).ready(function() {
     $(this).css('height',$(window).height()*0.9);
     $("#works").css('height',$(window).height()*0.7);
     $(this).addClass('open');
+    $("#moon").css('box-shadow','none');
     $("#portfolio").css('display','block');
     $("#close").css('opacity','1').delay(500).fadeIn('slow');
   });
 
-  // Close
+  // Moon glow
+  var iter = Math.PI;
+  function glow() {
+    if(!$("#moon").hasClass('open')) {
+      var size = Math.abs(Math.sin(iter)*60)+40;
+      $("#moon").css('box-shadow','0 0 '+size+'px #fff');
+      iter += 0.1;
+    }
+  }
+
+  var glowing = setInterval(glow, 300);
+
+  // Button
   $("#close").click(function() {
     revert();
   });
@@ -26,6 +39,7 @@ $(document).ready(function() {
     }
   });
 
+  // Close
   function revert() {
     $("#moon").removeClass('open');
     $("#moon").css('width','30%');
