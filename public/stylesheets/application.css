@@ -6409,16 +6409,22 @@ body #portfolio {
   z-index: 100;
   display: none;
   overflow: scroll;
+  font-family: Georgia;
 }
 body #portfolio h1 {
   font-weight: lighter;
   text-align: center;
+  opacity: 0.8;
+}
+body #portfolio h1:hover {
+  opacity: 1;
 }
 body #portfolio h3, body #portfolio p {
-  color: #000;
   padding: 0;
   margin: 2px;
-  text-align: left;
+}
+body #portfolio p {
+  color: #444;
 }
 body #portfolio #works {
   overflow: scroll;
@@ -6432,8 +6438,10 @@ body #portfolio #works a#clickthrough {
   height: 200px;
   overflow: hidden;
   display: block;
+  box-shadow: 0 10px 14px -6px rgba(0, 0, 0, 0.2);
 }
 body #portfolio #works a#clickthrough img {
+  border-radius: 20px;
   vertical-align: middle;
   opacity: 0.8;
   width: 100%;
@@ -6464,6 +6472,10 @@ body #portfolio .bottom {
 body #portfolio .bottom i {
   padding: 10px;
   color: #fff;
+  opacity: 0.8;
+}
+body #portfolio .bottom i:hover {
+  opacity: 1;
 }
 body i#close {
   color: #fff;
