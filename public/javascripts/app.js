@@ -53,7 +53,7 @@ $(document).ready(function() {
     $('canvas').hide();
     $('#moon').hide();
     $("#portfolio").css('display','none');
-    $('#mobile').unhide();
+    // $('#mobile').unhide();
   } else { // Desktop
     $('#mobile').hide();
   }

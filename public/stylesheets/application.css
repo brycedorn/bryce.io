@@ -6495,12 +6495,16 @@ body #mobile {
   display: hidden;
   background: #04a3ad url("../images/carbon.png");
 }
+body #mobile .fa-giant {
+  font-size: 10em;
+}
 body #mobile a {
-  color: #EEEAF2;
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
   text-align: center;
 }
 body #mobile a i {
-  padding-top: 120px;
+  padding-top: 110px;
 }
 body #mobile .panel {
   margin: 0;
