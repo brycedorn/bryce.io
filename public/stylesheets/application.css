@@ -6478,7 +6478,8 @@ body #portfolio .bottom i:hover {
   opacity: 1;
 }
 body i#close {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
   z-index: 10;
   position: absolute !important;
   right: 44px;
@@ -6486,6 +6487,9 @@ body i#close {
   top: 44px;
   display: block;
   cursor: pointer;
+}
+body i#close:hover {
+  color: white;
 }
 body #canvas {
   z-index: 100;

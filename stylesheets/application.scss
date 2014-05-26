@@ -125,7 +125,8 @@ body {
   }
 
   i#close {
-    color: #fff;
+    color: rgba(255,255,255,0.6);
+    text-shadow: 0 0 14px rgba(0,0,0,0.4);
     z-index: 10;
     position: absolute !important;
     right: 44px;
@@ -133,6 +134,10 @@ body {
     top: 44px;
     display: block;
     cursor: pointer;
+
+    &:hover {
+      color: rgba(255,255,255,1);
+    }
   }
 
   #canvas {
