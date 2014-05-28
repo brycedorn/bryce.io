@@ -9,7 +9,7 @@ body {
   #moon {
     position: absolute;
     box-shadow: 0 0 80px #fff;
-    top: -300px;
+    top: -25%;
     left: 35%;
     z-index: 10;
     display: block;
@@ -66,7 +66,7 @@ body {
     #works {
       // display: none;
       overflow: scroll;
-      margin-top: 40px;
+      margin: 40px 0;
 
       .entry {
         text-align: center;
@@ -78,7 +78,7 @@ body {
         overflow: hidden;
         display: block;
         box-shadow: 0 10px 14px -6px rgba(0,0,0,0.2);
-        
+
         img {
           border-radius: 20px;
           vertical-align: middle;
