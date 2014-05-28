@@ -120,13 +120,13 @@ function onFrame(event) {
     var segment3 = path3.segments[k];
     var sinus = Math.sin(time * 2 + i);
     var cosinus = Math.cos(time * 2 + i);
-    segment.point.y = sinus * (height-10) + 700;
-    segment2.point.y = sinus * (height-5) + 780;
-    text.position.y = sinus * (height+10) + 580;
+    segment.point.y = sinus * (height-10) + max_height*1.04;
+    segment2.point.y = sinus * (height-5) + max_height*1.1;
+    text.position.y = sinus * (height-10) + max_height*0.77;
     // Needs a way to account for event.time interrupts
     if(i < segment_amount/2) text.rotate(sinus*sway_amount);
     else text.rotate(-cosinus*sway_amount);
-    segment3.point.y = sinus * height + 860;
+    segment3.point.y = sinus * height + max_height*1.25;
     j++;
     k++;
     lastSinus = sinus;
