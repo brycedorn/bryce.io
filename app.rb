@@ -8,9 +8,9 @@ class App < Sinatra::Base
   end
 
   get '/minitranslate' do
-    redirect to('http://brycedorn.github.io/minitranslate')
+    redirect to('http://minitranslate.herokuapp.com')
   end
-  
+
   # Start the server if ruby file executed directly
   run! if app_file == $0
 end
