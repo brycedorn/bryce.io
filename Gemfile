@@ -7,6 +7,7 @@ gem 'haml'
 
 # Sass & Compass & Bootstrap
 gem 'sass'
+gem 'bootstrap-sass'
 gem 'compass'
 
 # Testing
