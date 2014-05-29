@@ -8,7 +8,7 @@ $(document).ready(function() {
   $("#moon").click(function() {
     $(this).css('width',$(window).width()*0.95);
     $(this).css('height',$(window).height()*0.9);
-    $("#works").css('height',$(window).height()*0.7);
+    $("#works").css('height',432);
     $(this).addClass('open');
     $("#moon").css('box-shadow','none');
     $("#portfolio").css('display','block');
