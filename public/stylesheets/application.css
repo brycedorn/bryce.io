@@ -54,7 +54,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* normalize.css v3.0.1 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6639,7 +6639,7 @@ body {
 body #moon {
   position: absolute;
   box-shadow: 0 0 80px #fff;
-  top: -240px;
+  top: -280px;
   left: 35%;
   z-index: 10;
   display: block;
@@ -6652,7 +6652,7 @@ body #moon {
   transition: all 0.3s;
 }
 body #moon:hover {
-  top: -220px;
+  top: -260px;
 }
 body #moon.open {
   top: 5%;
@@ -6693,7 +6693,7 @@ body #portfolio #works {
 }
 body #portfolio #works .entry {
   text-align: center;
-  padding: 30px 60px;
+  padding: 30px 45px;
 }
 body #portfolio #works a#clickthrough {
   height: 200px;
