@@ -25,7 +25,7 @@ $(document).ready(function() {
     }
   }
 
-  var glowing = setInterval(glow, 300);
+  var glowing = setInterval(glow, 100);
 
   // Button
   $("#close").click(function() {
@@ -42,8 +42,8 @@ $(document).ready(function() {
   // Close
   function revert() {
     $("#moon").removeClass('open');
-    $("#moon").css('width','30%');
-    $("#moon").css('height','50%');
+    $("#moon").css('width','300px');
+    $("#moon").css('height','300px');
     $("#portfolio").css('display','none');
     $("#close").css('opacity','0').fadeOut('fast');
   }

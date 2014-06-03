@@ -122,7 +122,7 @@ function onFrame(event) {
     var cosinus = Math.cos(time * 2 + i);
     segment.point.y = sinus * (height-10) + max_height*.84;
     segment2.point.y = sinus * (height-5) + max_height*.92;
-    text.position.y = sinus * (height-5) + max_height*0.69;
+    text.position.y = sinus * (height-5) + max_height*1.05 - 290;
     // Needs a way to account for event.time interrupts
     if(i < segment_amount/2) text.rotate(sinus*sway_amount);
     else text.rotate(-cosinus*sway_amount);
