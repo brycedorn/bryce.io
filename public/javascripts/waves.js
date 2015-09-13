@@ -10,7 +10,7 @@ var moveStars = new function() {
   var star = new Path.Circle({
     center: [0, 0],
     radius: 2,
-    fillColor: 'EEEAF2'
+    fillColor: '#EEEAF2'
   });
 
   var symbol = new Symbol(star);
@@ -55,7 +55,6 @@ var moveStars = new function() {
   };
 };
 
-
 // The amount of segment points we want to create per wave:
 var segment_amount = 5;
 
@@ -74,7 +73,7 @@ var thickness = 500;
 
 // Create a new path and style it:
 var path = new Path({
-  strokeColor: "0C0F66",
+  strokeColor: "#0C0F66",
   strokeWidth: thickness,
   strokeCap: 'square'
 });
@@ -86,23 +85,21 @@ var path2 = new Path({
 var text = new PointText({
   content: "bryce",
   fontSize: font_size,
-  fillColor: "EEEAF2",
+  fillColor: "#EEEAF2",
   fontFamily: "Georgia"
 });
-text.position = new Point(max_width*0.25,max_height*0.6);
 var path3 = new Path({
-  // strokeColor: "#0E4EAD",
   strokeColor: "rgba(4,78,173,0.8)",
   strokeWidth: thickness,
   strokeCap: 'square'
 });
+var paths = [path, path2, path3];
+text.position = new Point(max_width*0.25,max_height*0.6);
 
-// Add 5 segment points to the path spread out
-// over the width of the view:
 for (var i = 0; i <= segment_amount; i++) {
-  path.add(new Point(i/segment_amount, 1) * view.size);
-  path2.add(new Point(i/segment_amount, 1) * view.size);
-  path3.add(new Point(i/segment_amount, 1) * view.size);
+  for (var j = paths.length - 1; j >= 0; j--) {
+    paths[j].add(new Point(i/segment_amount, 1) * view.size);
+  };
 }
 
 var time = 0;
@@ -122,20 +119,17 @@ function onFrame(event) {
     var cosinus = Math.cos(time * 2 + i);
     segment.point.y = sinus * (height-10) + max_height*.84;
     segment2.point.y = sinus * (height-5) + max_height*.92;
+    segment3.point.y = sinus * height + max_height*1.05;
     text.position.y = sinus * (height-5) + max_height*1.05 - 290;
-    // Needs a way to account for event.time interrupts
     if(i < segment_amount/2) text.rotate(sinus*sway_amount);
     else text.rotate(-cosinus*sway_amount);
-    segment3.point.y = sinus * height + max_height*1.05;
     j++;
     k++;
     lastSinus = sinus;
     lastCosinus = cosinus;
     time += interval;
   }
-  path.smooth();
-  path2.smooth();
-  path3.smooth();
+  $.each(paths, function(i, p) { p.smooth(); });
   var tmp = {x: max_width, y: max_height/2};
   var vector = (view.center - tmp) / 10;
   moveStars(vector/2);
